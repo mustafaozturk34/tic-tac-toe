@@ -1,6 +1,7 @@
 body {
     font: 14px "Century Gothic", Futura, sans-serif;
     margin: 20px;   
+    background-color: rgb(182, 184, 187);
 }
 
 ol, ul {
@@ -17,23 +18,49 @@ ol, ul {
     margin-bottom: 10px;
 }
 
+.winner {
+    font-size: 40px;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes example {
+    from {color: blue;}
+    to {color: red;}
+  }
+
 .square {
     background: #fff;
-    border: 1px solid #999;
+    border: 2px solid #999;
     float: left;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 34px;
-    height: 34px;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 100px;
+    height: 100px;
     margin-right: -1px;
     margin-top: -1px;
     padding: 0;
     text-align: center;
-    width: 34px;
+    width: 100px;
+    
+}
+
+.red-class {
+    color: red;
+}
+
+.blue-class {
+    color: blue;
 }
 
 .square:focus {
     outline: none;
+}
+
+.square:hover {
+    opacity: 0.5;
 }
 
 .kbd-navigation .square:focus {
@@ -43,8 +70,18 @@ ol, ul {
 .game {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
 }
 
 .game-info {
     margin-left: 20px;
+    font-size: 24px;
 }
+
+#root{
+    height: 100vh;
+}
+
+
