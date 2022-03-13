@@ -48,11 +48,11 @@ ol, ul {
 
 @media(max-width: 768px) {
     .square {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 50px;
-        height: 50px;
-        width: 50px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 80px;
+        height: 80px;
+        width: 80px;
     }
 
     .winner {
@@ -60,8 +60,13 @@ ol, ul {
     }
 
     .game-info {
-        margin-left: 20px;
+        margin-top: 20px;
+        margin-left: 0 !important;
         font-size: 16px;
+    }
+
+    .game {
+        flex-direction: column !important;
     }
 }
 
